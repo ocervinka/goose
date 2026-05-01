@@ -89,6 +89,7 @@ jobs:
           skip_reviews: true
           reaction: "eyes"
           allowed_contexts: pull_request
+          allow_forks: "true"
 
       - name: Checkout code
         if: steps.security_check.outputs.authorized == 'true'
